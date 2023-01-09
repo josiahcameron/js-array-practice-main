@@ -5,7 +5,14 @@
 
 // Put your answer below -------------------------
 
-
+const myFunction = (string, i) => {
+   const arr = [];
+    
+    for (let j = 0; j < i; j++){
+    arr.push(string)  
+    }
+return arr
+}
 
 
 
@@ -24,11 +31,13 @@
 // Put your answer below -------------------------
 
 
+const reverse = function(array){
+    const spreadArray = [...array];
+    const revArray = spreadArray.reverse();
+    return revArray
+}
 
-
-
-
-
+reverse([4, 6, 7])
 
 
 
@@ -41,6 +50,21 @@
 // Put your answer below -------------------------
 
 
+const noFalsyHere = function(array) {
+    let arr = [];
+    
+    for (i = 0; i < array.length; i++){
+        const newArray = array[i]
+        if (!newArray){
+            
+        } else {
+            arr.push(array[i]);
+        }
+    }
+    return arr
+} 
+
+noFalsyHere([4, 0, 3])
 
 
 
