@@ -51,17 +51,9 @@ reverse([4, 6, 7])
 
 
 const noFalsyHere = function(array) {
-    let arr = [];
-    
-    for (i = 0; i < array.length; i++){
-        const newArray = array[i]
-        if (!newArray){
-            
-        } else {
-            arr.push(array[i]);
-        }
-    }
-    return arr
+    const arr = array;
+    const arrayFiltered = arr.filter(Boolean);
+    return arrayFiltered;
 } 
 
 noFalsyHere([4, 0, 3])
