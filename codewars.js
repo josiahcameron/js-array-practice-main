@@ -1,7 +1,16 @@
 // # 1
 // Testing 1-2-3
 // https://www.codewars.com/kata/54bf85e3d5b56c7a05000cf9/train/javascript
-
+var number=function(array){
+    const initArray = array;
+    const newArray = [];
+    const initNum = 0;
+    for (i = 0; i < initArray.length; i++){
+      let initNum++
+      newArray.push(`${initNum}: ${initArray[i]}`);
+      }
+    return newArray
+  }
 
 
 

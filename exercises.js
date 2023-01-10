@@ -32,8 +32,8 @@ return arr
 
 
 const reverse = function(array){
-    const spreadArray = [...array];
-    const revArray = spreadArray.reverse();
+    const spreadArray = [...array]; //The spread (...) lets the array be expanded
+    const revArray = spreadArray.reverse(); //.reverse switches the order of the array
     return revArray
 }
 
@@ -52,7 +52,7 @@ reverse([4, 6, 7])
 
 const noFalsyHere = function(array) {
     const arr = array;
-    const arrayFiltered = arr.filter(Boolean);
+    const arrayFiltered = arr.filter(Boolean); //filter automatically filters out any element with a falsy value
     return arrayFiltered;
 } 
 
