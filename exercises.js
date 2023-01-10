@@ -75,10 +75,18 @@ noFalsyHere([4, 0, 3])
 
 // Put your answer below -------------------------
 
+//Each array has two parameters, the first parameter will always be the key for the second
+const fourthFunction = function(array1, array2){
+    const arr1 = array1
+    const arr2 = array2
+    const nestArray = [`${arr1}: ${arr2}`]
+    return object == [array1[array2]]
+    const finalResult = ``
+}
 
 
-
-
+//Idea 1: flatten the array and run a loop that puts together new arrays in intervals of 2
+//Idea 2: figure out how to 
 
 
 
@@ -93,11 +101,18 @@ noFalsyHere([4, 0, 3])
 
 // Put your answer below -------------------------
 
-
-
-
-
-
+const noDupes = function(array){
+    const ogArray = array;
+    //New array needs to start out empty
+    const newArray = [];  
+    //forEach() loops through and checks(iterates) each element of the OG array and runs an if statement to check if any of those elements match anything in the newArray. If false, it pushes the new element into newArray.
+    ogArray.forEach((value) => {        
+        if(!newArray.includes(value)){
+                newArray.push(value);
+        }
+    })
+    return newArray
+}
 
 
 
