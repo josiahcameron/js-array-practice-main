@@ -14,12 +14,15 @@ const myFunction = (string, i) => {
 return arr
 }
 
-
-
-
-
-
-
+// Alt Solution using arry.from
+// function myFunction(str, i)
+//     return Array.from({
+//         length: i
+//     },
+// function(){
+//     return str;
+// }
+// }))
 
 // -----------------------------------------------
 
@@ -39,7 +42,14 @@ const reverse = function(array){
 
 reverse([4, 6, 7])
 
-
+//Alt solution
+// const reverse = (arr) {
+//     const result = [];
+//     for (let i = 0; i < arr.length; i++){
+//         result.unshift(arr[i]);
+//     }
+//     return result;
+// }
 
 // -----------------------------------------------
 
@@ -60,8 +70,15 @@ noFalsyHere([4, 0, 3])
 
 
 
-
-
+//Alt
+// const noFalsyHere = function(array){
+//     const result = [];
+//     for (let i = o; i < arr.length; i++){
+//         if (!!arr[i]){
+//             result.push(arr[i]);
+//         }
+//     }
+// }
 
 
 
@@ -84,12 +101,15 @@ const fourthFunction = function(array1, array2){
     const finalResult = ``
 }
 
+//Solution
+// const fFunction = () => {
+//     const result = {};
 
-//Idea 1: flatten the array and run a loop that puts together new arrays in intervals of 2
-//Idea 2: figure out how to 
-
-
-
+//     for(let i = o; i < arr.length; i++){
+//         result[arr[i][0]] = arr[i][1];
+//     }
+//     return result;
+// }
 
 
 // -----------------------------------------------
@@ -114,7 +134,21 @@ const noDupes = function(array){
     return newArray
 }
 
+//
+// const noDupes = (array) => {
+//     const result = [];
+//     for(let i = 0; i < arr.length; i++){
+//         if(result.indexOf(arr[i]) === -1){
+//             result.push(arr[i]);
+//         }
+//     }
+//     return result;
+// }
 
+// //
+// const noDupes = (arr) =>{
+// return [... new Set(arr)] //new Set() will create a set that automatically won't have duplicates
+// }
 
 
 // -----------------------------------------------
@@ -133,7 +167,6 @@ const twinCheck = (array1, array2) =>{
     const arr1 = array1;
     const arr2 = array2;
     if (arr1 === arr2) return true;
-    if (arr1 == null || arr2 == null) return false;
     if (arr1.length !== arr2.length) return false;
     
     for (i = 0; i < arr1.length; i++){
@@ -144,8 +177,17 @@ const twinCheck = (array1, array2) =>{
 
 twinCheck([1,2,3,4], [1,2,3,4])
 
+//
+arr1.sort();
+arr2.sort();
 
-
+for(let i = 0; i < arr1.length; i++){
+    if(arr1[i] !== arr2[i]){
+        return false;
+    }
+}
+return true;
+}
 
 
 
